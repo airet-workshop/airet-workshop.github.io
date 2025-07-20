@@ -73,7 +73,7 @@
 
 			// Set up nav items.
 				$nav_a
-					.scrolly()
+					.scrolly({ speed: 400, easing: 'swing' })
 					.on('click', function(event) {
 
 						var $this = $(this),
@@ -113,7 +113,7 @@
 					});
 
 			// Initialize scrollzer.
-				$.scrollzer(ids, { pad: 300, lastHack: true });
+				$.scrollzer(ids, { pad: 50, lastHack: true });
 
 	});
 
