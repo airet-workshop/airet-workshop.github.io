@@ -105,7 +105,7 @@
 	}
 
 	h4 {
-		font-size: 1.4em;
+		font-size: 1.2em !important;
 		line-height: 1.5em;
 		color: #667eea;
 	}
@@ -1139,6 +1139,18 @@
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		gap: 2em;
 		margin: 2em 0;
+		justify-content: center;
+	}
+
+	/* Limit width for single organizer grids */
+	.organizer-grid.single {
+		display: block;
+		width: 400px;
+		margin: 2em 0;
+	}
+	
+	.organizer-grid.single .organizer-card {
+		width: 100%;
 	}
 
 	.organizer-card {
@@ -1214,11 +1226,6 @@
 		font-style: italic;
 		margin: 0.5em 0 0 0;
 		font-weight: 500;
-	}
-
-	.publicity-chair {
-		max-width: 350px;
-		margin: 2em 0;
 	}
 
 /* Workshop Title Section */
@@ -1385,13 +1392,78 @@
 		transform: translateX(-50%);
 		width: 100px;
 		height: 2px;
-		background: linear-gradient(135deg, #667eea, #764ba2);
 		border-radius: 1px;
 		opacity: 0.3;
 	}
 
 	#one .container::before {
 		display: none;
+	}
+
+/* Themes and Topics Styling */
+
+	#themes ul {
+		margin: 1em 0 2em 1.5em;
+		list-style-type: disc;
+	}
+
+	#themes ul li {
+		margin: 0.5em 0;
+		color: #4a5568;
+		line-height: 1.6em;
+	}
+
+	#themes h3 {
+		color: #667eea;
+		font-size: 1.4em;
+		margin: 2em 0 1em 0;
+		font-weight: 600;
+	}
+
+	#themes h3:first-of-type {
+		margin-top: 1em;
+	}
+
+/* Important Dates Styling */
+
+	.important-dates {
+		list-style: none;
+		padding: 0;
+		margin: 2em 0;
+	}
+
+	.important-dates li {
+		background: #ffffff;
+		border-radius: 10px;
+		padding: 1.5em 2em;
+		margin: 1em 0;
+		box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+		border-left: 4px solid #667eea;
+		transition: all 0.3s ease;
+		font-size: 1.1em;
+	}
+
+	.important-dates li:hover {
+		transform: translateX(5px);
+		box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+	}
+
+	.important-dates li strong {
+		color: #667eea;
+		font-weight: 600;
+	}
+
+/* Submission Instructions Styling */
+
+	#submission ul {
+		margin: 1em 0 2em 1.5em;
+		list-style-type: disc;
+	}
+
+	#submission ul li {
+		margin: 0.5em 0;
+		color: #4a5568;
+		line-height: 1.6em;
 	}
 
 /* One */
