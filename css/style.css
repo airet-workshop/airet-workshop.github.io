@@ -1540,3 +1540,144 @@
 				#footer .copyright li a {
 					color: inherit;
 				}
+
+/* Sponsors Section */
+
+	.sponsors-content {
+		max-width: 800px;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.sponsors-images {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 3em;
+		margin: 2em 0;
+		flex-wrap: wrap;
+	}
+
+	.sponsors-images img {
+		max-width: 250px;
+		max-height: 150px;
+		object-fit: contain;
+	}
+
+	@media screen and (max-width: 768px) {
+		.sponsors-images {
+			flex-direction: column;
+			gap: 2em;
+		}
+		
+		.sponsors-images img {
+			max-width: 200px;
+			max-height: 120px;
+		}
+	}
+
+/* Keynote Speaker Section */
+
+	.keynote-speaker {
+		background: #ffffff;
+		border-radius: 15px;
+		padding: 3em;
+		box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+		border: 1px solid rgba(102, 126, 234, 0.1);
+		display: flex;
+		align-items: flex-start;
+		gap: 2.5em;
+		margin: 2em 0;
+	}
+
+	.keynote-image {
+		flex-shrink: 0;
+	}
+
+	.keynote-image img {
+		width: 180px;
+		height: 180px;
+		border-radius: 15px;
+		object-fit: cover;
+		background: linear-gradient(135deg, #667eea, #764ba2);
+		padding: 4px;
+		box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+	}
+
+	.keynote-info {
+		flex: 1;
+	}
+
+	.keynote-info h3 {
+		margin: 0 0 0.5em 0;
+		font-size: 2em;
+		color: #2d3748;
+	}
+
+	.keynote-info h3 a {
+		color: #667eea;
+		text-decoration: none;
+		border-bottom: none;
+	}
+
+	.keynote-info h3 a:hover {
+		color: #764ba2;
+	}
+
+	.keynote-title {
+		color: #4a5568;
+		font-size: 1.1em;
+		margin: 0 0 1.5em 0;
+		font-weight: 500;
+		line-height: 1.6em;
+	}
+
+	.keynote-bio {
+		color: #4a5568;
+		margin: 0 0 1.2em 0;
+		text-align: justify;
+		line-height: 1.7em;
+	}
+
+	.keynote-links {
+		margin: 1.5em 0 0 0;
+		font-size: 1.1em;
+	}
+
+	.keynote-links a {
+		color: #667eea;
+		text-decoration: none;
+		font-weight: 500;
+		margin: 0 0.5em;
+	}
+
+	.keynote-links a:hover {
+		color: #764ba2;
+	}
+
+	.keynote-links i {
+		margin-right: 0.5em;
+	}
+
+	@media screen and (max-width: 768px) {
+		.keynote-speaker {
+			flex-direction: column;
+			text-align: center;
+			padding: 2em;
+			align-items: center;
+		}
+
+		.keynote-image {
+			align-self: center;
+			margin-bottom: 1.5em;
+		}
+
+		.keynote-image img {
+			width: 150px;
+			height: 150px;
+		}
+
+		.keynote-info h3 {
+			font-size: 1.6em;
+		}
+	}
