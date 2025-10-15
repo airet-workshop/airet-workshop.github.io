@@ -1149,16 +1149,16 @@
 
 	.organizer-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-template-columns: repeat(auto-fit, 450px);
 		gap: 2em;
 		margin: 2em 0;
-		justify-content: center;
+		justify-content: start;
 	}
 
 	/* Limit width for single organizer grids */
 	.organizer-grid.single {
 		display: block;
-		width: 400px;
+		width: 450px;
 		margin: 2em 0;
 	}
 	
@@ -1344,7 +1344,7 @@
 
 	@media screen and (max-width: 1280px) {
 		.organizer-grid {
-			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+			grid-template-columns: repeat(auto-fit, 450px);
 		}
 		
 		.major h1 {
