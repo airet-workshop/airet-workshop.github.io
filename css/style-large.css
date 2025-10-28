@@ -21,3 +21,9 @@
 	#wrapper {
 		padding-right: 17em;
 	}
+
+/* Main */
+
+	#main > section > .container {
+		padding: 4em 2em 2em 2em;
+	}
